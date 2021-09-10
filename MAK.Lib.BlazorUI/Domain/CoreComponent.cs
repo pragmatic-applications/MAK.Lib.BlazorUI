@@ -40,7 +40,6 @@ namespace Domain
         [Parameter] public EventCallback<string> OnSearchChanged { get; set; }
         protected async Task SearchChanged(string searchTerm)
         {
-            this.PagingEntity.PageNumber = 1;
             this.PagingEntity.SearchTerm = searchTerm;
             await this.GetAsync();
         }

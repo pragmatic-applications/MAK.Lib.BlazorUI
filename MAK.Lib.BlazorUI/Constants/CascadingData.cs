@@ -3,7 +3,6 @@
     public class CascadingData
     {
         public const string EntitiesParameterValue = "EntitiesParameterValue";
-        public const string EntityParameterValue = "EntityParameterValue";
         public const string BannerBackgroundImageCssClassParameterValue = "BannerBackgroundImageCssClassParameterValue";
 
         public const string PositionCssClassParameterValue = "PositionCssClassParameterValue";
@@ -18,8 +17,5 @@
         public const string TextContentCascadingValue = "TextContentCascadingValue";
         public const string CardLinkCssCascadingValue = "CardLinkCssCascadingValue";
         public const string CardHeaderCssCascadingValue = "CardHeaderCssCascadingValue";
-
-        public const string ToDoTaskEntitiesParameterValue = "ToDoTaskEntitiesParameterValue";
     }
 }
-//ToDoTask
