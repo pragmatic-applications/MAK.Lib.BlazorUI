@@ -23,9 +23,9 @@ namespace Domain
         protected virtual void Reload()
         {
             this.ClearFields();
+
             this.NavigationManager.NavigateTo("/");
         }
-
 
         protected void GoToPage(string pageToNavigateTo)
         {

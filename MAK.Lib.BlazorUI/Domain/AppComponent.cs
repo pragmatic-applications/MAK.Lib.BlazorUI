@@ -8,11 +8,19 @@ namespace Domain
 {
     public class AppComponent : CoreComponent
     {
-        protected override void OnInitialized() => base.OnInitialized();
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            this.PagingEntity.SearchTerm = string.Empty;
+        }
     }
     public class AppComponent<TEntity> : AppComponent where TEntity : class
     {
-        protected override void OnInitialized() => base.OnInitialized();
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            this.PagingEntity.SearchTerm = string.Empty;
+        }
 
         protected virtual void LoadDataSuccess(PagingResponse<TEntity> data)
         {
@@ -23,7 +31,11 @@ namespace Domain
     }
     public class AppComponent<TEntity, TEntityCategory> : AppComponent where TEntity : class where TEntityCategory : class
     {
-        protected override void OnInitialized() => base.OnInitialized();
+        protected override void OnInitialized()
+        {
+            base.OnInitialized();
+            this.PagingEntity.SearchTerm = string.Empty;
+        }
 
         protected virtual void LoadDataSuccess(PagingResponse<TEntity> data)
         {
