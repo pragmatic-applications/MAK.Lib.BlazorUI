@@ -13,7 +13,7 @@ namespace Domain
         {
             base.OnInitialized();
 
-            this.CurrentTitle = string.IsNullOrWhiteSpace(this.TitleParameter) ? "Blazor & MVC" : this.TitleParameter;
+            this.CurrentTitle = string.IsNullOrWhiteSpace(this.BannerTitleCascadingParameter) ? "Blazor & MVC" : this.BannerTitleCascadingParameter;
         }
 
         protected virtual void ClearFields() { }

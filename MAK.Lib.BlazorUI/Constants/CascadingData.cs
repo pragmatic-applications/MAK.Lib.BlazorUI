@@ -17,5 +17,8 @@
         public const string TextContentCascadingValue = "TextContentCascadingValue";
         public const string CardLinkCssCascadingValue = "CardLinkCssCascadingValue";
         public const string CardHeaderCssCascadingValue = "CardHeaderCssCascadingValue";
+        public const string BannerTitleCascadingValue = "BannerTitleCascadingValue";
+        public const string AppNameCascadingValue = "AppNameCascadingValue";
+        public const string BrowserTitleCascadingValue = "BrowserTitleCascadingValue";
     }
 }
