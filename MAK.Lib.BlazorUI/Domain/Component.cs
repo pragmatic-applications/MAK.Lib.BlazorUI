@@ -35,6 +35,7 @@ namespace Domain
 
         [Parameter] public string ButtonLogoValueParameter { get; set; }
 
+
         [CascadingParameter(Name = nameof(CascadingData.BrowserTitleCascadingValue))]
         public string BrowserTitleCascadingParameter { get; set; }
         public string BrowserTitleValue { get; set; }
@@ -46,6 +47,7 @@ namespace Domain
         [CascadingParameter(Name = nameof(CascadingData.BannerTitleCascadingValue))]
         public string BannerTitleCascadingParameter { get; set; }
         public string BannerTitleValue { get; set; }
+
 
         public string UrlUpdate { get; set; }
         public string UrlDelete { get; set; }

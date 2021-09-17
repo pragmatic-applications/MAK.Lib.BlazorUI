@@ -11,8 +11,11 @@ namespace MAK.Lib.BlazorUI.Views
 {
     public partial class Pagination : ComponentBase
     {
-        [CascadingParameter(Name = "PagerDataValue")] public PagerData PagerData { get; set; }
-        [CascadingParameter(Name = nameof(CascadingData.SpreadValue))] public int Spread { get; set; }
+        [CascadingParameter(Name = nameof(CascadingData.PagerDataValue))]
+        public PagerData PagerData { get; set; }
+
+        [CascadingParameter(Name = nameof(CascadingData.SpreadValue))]
+        public int Spread { get; set; }
 
         [Parameter] public EventCallback<int> OnSelectedPage { get; set; }
         private List<PagingLink> links;

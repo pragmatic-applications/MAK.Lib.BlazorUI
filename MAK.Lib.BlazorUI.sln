@@ -1,43 +1,31 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.30114.105
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31710.8
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{6BEEF065-F8C1-4D2E-9FAE-92AEB62C0AB3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAK.Lib.BlazorUI", "MAK.Lib.BlazorUI\MAK.Lib.BlazorUI.csproj", "{191135B9-4824-4B6D-8F7F-18396EAEF00A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A5022F94-C633-4BBE-B2E0-A22D458D75DC}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
 		docs\Record.cs = docs\Record.cs
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAK.Lib.BlazorUI", "MAK.Lib.BlazorUI\MAK.Lib.BlazorUI.csproj", "{084B1A21-3A7F-4F90-B040-BDC123B64B4D}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
-		Debug|x64 = Debug|x64
-		Debug|x86 = Debug|x86
 		Release|Any CPU = Release|Any CPU
-		Release|x64 = Release|x64
-		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|x64.Build.0 = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Debug|x86.Build.0 = Debug|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|x64.ActiveCfg = Release|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|x64.Build.0 = Release|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|x86.ActiveCfg = Release|Any CPU
-		{084B1A21-3A7F-4F90-B040-BDC123B64B4D}.Release|x86.Build.0 = Release|Any CPU
+		{191135B9-4824-4B6D-8F7F-18396EAEF00A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{191135B9-4824-4B6D-8F7F-18396EAEF00A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{191135B9-4824-4B6D-8F7F-18396EAEF00A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{191135B9-4824-4B6D-8F7F-18396EAEF00A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {A521F625-7598-4990-BAFD-83B8DF6D3C27}
+		SolutionGuid = {6CD34B4C-CF15-47F4-A362-289ECAD1366D}
 	EndGlobalSection
 EndGlobal

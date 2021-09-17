@@ -3,7 +3,7 @@
 //=================================================================
 // Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A Blazor RCL
-// ASP.NET Core 5.0
-// Date: 2021-09-11
-// Stop: 18:00
+// ASP.NET Core 6.0
+// Date: 2021-09-17
+// Stop: 17:00
 //=================================================================
