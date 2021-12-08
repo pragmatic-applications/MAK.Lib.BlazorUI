@@ -1,12 +1,4 @@
-﻿using System.Collections.Generic;
-
-using Constants;
-
-using Microsoft.AspNetCore.Components;
-
-using PageFeatures;
-
-namespace Domain
+﻿namespace Domain
 {
     public class Component : ComponentBase
     {
@@ -16,6 +8,7 @@ namespace Domain
         public string FormTitle { get; set; }
 
         [Parameter] public int Id { get; set; }
+        [Parameter] public string? CategoryUrl { get; set; }
 
         [Parameter] public RenderFragment ChildContent { get; set; }
         [Parameter(CaptureUnmatchedValues = true)] public Dictionary<string, object> Attributes { get; set; }

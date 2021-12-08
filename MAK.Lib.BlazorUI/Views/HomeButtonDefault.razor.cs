@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿namespace Views;
 
-namespace MAK.Lib.BlazorUI.Views
+public partial class HomeButtonDefault
 {
-    public partial class HomeButtonDefault
-    {
-        [Parameter] public string UrlParameter { get; set; } = string.Empty;
-    }
+    [Parameter] public string UrlParameter { get; set; } = string.Empty;
 }

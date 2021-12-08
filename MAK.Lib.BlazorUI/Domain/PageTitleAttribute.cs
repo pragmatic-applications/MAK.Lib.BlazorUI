@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Domain
+﻿namespace Domain
 {
     [AttributeUsage(validOn: AttributeTargets.Class, AllowMultiple = false, Inherited = false)]
     public class PageTitleAttribute : Attribute

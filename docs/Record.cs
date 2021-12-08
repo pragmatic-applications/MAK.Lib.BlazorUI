@@ -3,7 +3,8 @@
 //=================================================================
 // Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A Blazor RCL
-// ASP.NET Core 6.0
-// Date: 2021-09-17
-// Stop: 17:00
+// .NET 6
+// Date: 2021-12-08
+// Stop: 18:00
+// NuGet Version: 0.0.0.8
 //=================================================================

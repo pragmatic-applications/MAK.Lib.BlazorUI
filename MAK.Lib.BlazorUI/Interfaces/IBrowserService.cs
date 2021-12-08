@@ -1,13 +1,8 @@
-﻿using System.Threading.Tasks;
+﻿namespace Interfaces;
 
-using Domain;
-
-namespace Interfaces
+public interface IBrowserService
 {
-    public interface IBrowserService
-    {
-        Task<BrowserDimension> GetDimensions();
-        ValueTask Resize();
-        ValueTask OnWindowSize();
-    }
+    Task<BrowserDimension> GetDimensions();
+    ValueTask Resize();
+    ValueTask OnWindowSize();
 }

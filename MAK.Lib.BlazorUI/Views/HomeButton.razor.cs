@@ -1,6 +1,5 @@
-﻿namespace MAK.Lib.BlazorUI.Views
+﻿namespace Views;
+
+public partial class HomeButton
 {
-    public partial class HomeButton
-    {
-    }
 }

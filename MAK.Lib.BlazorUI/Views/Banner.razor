@@ -1,10 +1,47 @@
-﻿
-@inherits CoreComponent
+﻿@namespace Views
 
-<Title Value="@this.BrowserTitleCascadingParameter"></Title>
+@inherits Component
 
-<div class="@this.BannerBackgroundImageCssClassCascadingParameter">
+<CascadingValue Value="this">
+    @this.ChildContent
+</CascadingValue>
+
+
+@*@inherits CoreComponent
+*@
+@*<div class="@this.BannerState.BannerBackgroundImage">
+    <p class="text_center">
+    @this.BannerState.BannerTitle
+    </p>
+    </div>*@
+
+
+
+@*
+    <div class="@this.BannerBackgroundImageCssClassCascadingParameter">
     <p class="text_center">
     @this.BannerTitleCascadingParameter
     </p>
-</div>
+    </div>
+*@
+
+@*
+    Orig
+
+    @inherits CoreComponent
+
+    <div class="@this.BannerBackgroundImageCssClassCascadingParameter">
+    <p class="text_center">
+    @this.BannerTitleCascadingParameter
+    </p>
+    </div>
+
+*@
+
+@*
+    <CascadingValue Value="this.BannerTitleValue" Name="@nameof(CascadingData.BannerTitleCascadingValue)" IsFixed="false">
+    <CascadingValue Value="this.AppNameValue" Name="@nameof(CascadingData.AppNameCascadingValue)" IsFixed="false">
+    <Banner />
+    </CascadingValue>
+    </CascadingValue>
+*@

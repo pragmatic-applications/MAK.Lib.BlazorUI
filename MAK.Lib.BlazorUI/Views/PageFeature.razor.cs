@@ -1,13 +1,8 @@
-﻿using Domain;
+﻿namespace Views;
 
-using PageFeatures;
-
-namespace MAK.Lib.BlazorUI.Views
+public partial class PageFeature : CoreComponent
 {
-    public partial class PageFeature : CoreComponent
-    {
-        public PagerData PagerDataValue { get; set; }
+    public PagerData PagerDataValue { get; set; }
 
-        protected override void OnParametersSet() => this.PagerDataValue = this.PagerDataParameter;
-    }
+    protected override void OnParametersSet() => this.PagerDataValue = this.PagerDataParameter;
 }

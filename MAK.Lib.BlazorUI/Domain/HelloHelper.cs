@@ -2,16 +2,13 @@
 
 namespace Domain
 {
-  public class HelloHelper
-  {
-    public HelloHelper(string name)
+    public class HelloHelper
     {
-      this.Name = name;
+        public HelloHelper(string name) => this.Name = name;
+
+        public string Name { get; set; }
+
+        [JSInvokable]
+        public string SayHello() => $"Hello, {this.Name}!";
     }
-
-    public string Name { get; set; }
-
-    [JSInvokable]
-    public string SayHello() => $"Hello, {this.Name}!";
-  }
 }

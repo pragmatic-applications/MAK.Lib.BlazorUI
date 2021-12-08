@@ -2,21 +2,18 @@
 
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
-        <Nullable>enable</Nullable>
         <ImplicitUsings>enable</ImplicitUsings>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.0.6</Version>
+        <Version>0.0.0.8</Version>
         <RepositoryUrl>https://github.com/pragmatic-applications/MAK.Lib.BlazorUI</RepositoryUrl>
         <Authors>Maurice Antonio Kelly @MAKMaurice</Authors>
         <Company>Pragmatic Applications</Company>
         <PackageLicenseExpression>MIT</PackageLicenseExpression>
         <Description>A .NET6 Blazor RCL</Description>
-        <PackageReleaseNotes>A .NET 5.0 Blazor RCL</PackageReleaseNotes>
+        <PackageReleaseNotes>A .NET Blazor RCL</PackageReleaseNotes>
         <PackageTags>A .NET6 Blazor RCL</PackageTags>
-        <RepositoryType>A .NET6 Blazor RCL</RepositoryType>
+        <RepositoryType>A .NET Blazor RCL</RepositoryType>
         <Copyright>Pragmatic Applications - Maurice Antonio Kelly @MAKMaurice</Copyright>
-        <AssemblyVersion>0.0.0.6</AssemblyVersion>
-        <FileVersion>0.0.0.6</FileVersion>
     </PropertyGroup>
 
     <ItemGroup>
@@ -24,12 +21,11 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MAK.Lib.Core.Interface" Version="0.0.0.2" />
-        <PackageReference Include="MAK.Lib.HttpFeature" Version="0.0.0.4" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web.Extensions" Version="5.0.0-preview9.20513.1" />
+        <PackageReference Include="MAK.Lib.Core" Version="0.0.0.4" />
         <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
-        <PackageReference Include="System.Net.Http.Json" Version="6.0.0-rc.1.21451.13" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0-rc.1.21452.15" />
+        <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.0" />
+        <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
     </ItemGroup>
 
 </Project>

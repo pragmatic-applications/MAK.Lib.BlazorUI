@@ -1,9 +1,6 @@
-﻿using Microsoft.AspNetCore.Components;
+﻿namespace Views;
 
-namespace MAK.Lib.BlazorUI.Views
+public partial class AlertBox
 {
-    public partial class AlertBox
-    {
-        [Parameter] public RenderFragment ChildContent { get; set; }
-    }
+    [Parameter] public RenderFragment ChildContent { get; set; }
 }

@@ -1,30 +1,19 @@
-﻿using System.Threading.Tasks;
+﻿namespace Views;
 
-using Constants;
-
-using Domain;
-
-using Interfaces;
-
-using Microsoft.AspNetCore.Components;
-
-namespace MAK.Lib.BlazorUI.Views
+public partial class Sort : CoreComponent
 {
-    public partial class Sort : CoreComponent
+    [CascadingParameter(Name = nameof(CascadingData.SelectParameterValue))]
+    public ISelect SelectCascadingParameter { get; set; }
+
+    [CascadingParameter(Name = nameof(CascadingData.PositionCssClassParameterValue))]
+    public string PositionCssClassCascadingParameter { get; set; }
+
+    private async Task ApplySort(ChangeEventArgs eventArgs)
     {
-        [CascadingParameter(Name = nameof(CascadingData.SelectParameterValue))]
-        public ISelect SelectCascadingParameter { get; set; }
+        if(eventArgs.Value.ToString() == "-1") { return; }
 
-        [CascadingParameter(Name = nameof(CascadingData.PositionCssClassParameterValue))]
-        public string PositionCssClassCascadingParameter { get; set; }
+        await this.OnSortChanged.InvokeAsync(eventArgs.Value.ToString());
 
-        private async Task ApplySort(ChangeEventArgs eventArgs)
-        {
-            if(eventArgs.Value.ToString() == "-1") { return; }
-
-            await this.OnSortChanged.InvokeAsync(eventArgs.Value.ToString());
-
-            this.StateHasChanged();
-        }
+        this.StateHasChanged();
     }
 }

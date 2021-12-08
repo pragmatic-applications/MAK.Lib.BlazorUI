@@ -1,14 +1,35 @@
-﻿using Constants;
+﻿namespace Views;
 
-using Domain;
-
-using Microsoft.AspNetCore.Components;
-
-namespace MAK.Lib.BlazorUI.Views
+public partial class Banner : Component
 {
-    public partial class Banner : CoreComponent
+    private string bannerTitle;
+    public string BannerTitle
     {
-        [CascadingParameter(Name = nameof(CascadingData.BannerBackgroundImageCssClassParameterValue))]
-        public string BannerBackgroundImageCssClassCascadingParameter { get; set; }
+        get => this.bannerTitle;
+        set
+        {
+            this.bannerTitle = value;
+
+            this.StateHasChanged();
+        }
+    }
+
+    private string bannerBackgroundImage;
+    public string BannerBackgroundImage
+    {
+        get => this.bannerBackgroundImage;
+        set
+        {
+            this.bannerBackgroundImage = value;
+
+            this.StateHasChanged();
+        }
     }
 }
+
+
+//public partial class Banner : Component //CoreComponent
+//{
+//    [CascadingParameter(Name = nameof(CascadingData.BannerBackgroundImageCssClassParameterValue))]
+//    public string BannerBackgroundImageCssClassCascadingParameter { get; set; }
+//}

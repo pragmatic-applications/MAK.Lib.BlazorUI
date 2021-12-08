@@ -10,6 +10,9 @@
 
         public static void CloseMenu() => ToggleSwitch = true;
 
+        public static string BackUrl { get; set; }
+        public static void SetBackUrl(string backUrl) => BackUrl = backUrl;
+
         public static string MenuMainCSS { get; set; } = "MenuMain";
     }
 }

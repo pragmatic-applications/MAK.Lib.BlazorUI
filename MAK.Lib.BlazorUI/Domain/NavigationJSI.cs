@@ -1,5 +1,3 @@
-using System;
-using System.Threading.Tasks;
 
 using Microsoft.JSInterop;
 
@@ -9,10 +7,7 @@ namespace Domain
     {
         private readonly Lazy<Task<IJSObjectReference>> moduleTask;
 
-        public NavigationJSI(IJSRuntime jsRuntime)
-        {
-            this.moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/MAK.Lib.BlazorUI/js/NavigationJSI.js").AsTask());
-        }
+        public NavigationJSI(IJSRuntime jsRuntime) => this.moduleTask = new(() => jsRuntime.InvokeAsync<IJSObjectReference>("import", "./_content/MAK.Lib.BlazorUI/js/NavigationJSI.js").AsTask());
 
         public async ValueTask<string> Prompt(string message)
         {

@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-
-using PageFeatures;
-
-namespace Domain
+﻿namespace Domain
 {
     public class AppComponent : CoreComponent
     {
@@ -42,7 +36,7 @@ namespace Domain
             this.IsLoading = false;
             this.IsError = false;
         }
-        protected virtual Task TryLoadAsync(Action<PagingResponse<TEntity>> success, Action<Exception> fail) => Task.FromResult(default(object));
+        protected virtual Task TryLoadAsync(Action<PagingResponse<TEntity>> success, Action<Exception> fail, string categoryUrl = null) => Task.FromResult(default(object));
 
         protected virtual void LoadEntityCategoryDataSuccess(List<TEntityCategory> data)
         {
