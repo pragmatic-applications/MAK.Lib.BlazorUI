@@ -4,7 +4,7 @@
 // Programmer: Maurice Antonio Kelly @MAKMaurice
 // Description: A Blazor RCL
 // .NET 6
-// Date: 2021-12-08
-// Stop: 18:00
-// NuGet Version: 0.0.0.8
+// Date: 2021-12-09
+// Stop: 14:00
+// NuGet Version: 0.0.0.9
 //=================================================================
