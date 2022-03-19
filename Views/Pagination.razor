@@ -1,0 +1,12 @@
+﻿@namespace Views
+
+<nav class="pagination_container" aria-label="Page navigation">
+    <ul class="pagination justify-content-center">
+        @foreach(var item in this.links)
+        {
+            <li @onclick="() => this.SelectPageHandler(item)" class="page_item @(item.IsCursorPointer ? "cursor_pointer" : null) @(item.Enabled ? null : "disabled") @(item.Active ? "active" : null)">
+                <span class="page_link" href="#">@item.Text</span>
+            </li>
+        }
+    </ul>
+</nav>

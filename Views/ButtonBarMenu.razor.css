@@ -1,0 +1,56 @@
+﻿
+.navigation_toggle
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.NavigationMenuButton
+{
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 12px 6px 11px 6px;
+    background: #222;
+    color: #FFF;
+    border-radius: 0;
+    border: none;
+    text-decoration: none;
+    outline: none;
+    cursor: pointer;
+    z-index: 10000;
+    transition: all 0.5s ease;
+}
+
+.NavigationMenuButton:active,
+.NavigationMenuButton:focus,
+.NavigationMenuButton:hover
+{
+    border: none;
+    background: #3e3e3e;
+    color: #FFF;
+    outline: none;
+    text-decoration: none;
+}
+
+.icon-bar
+{
+    display: block;
+    width: 22px;
+    height: 2px;
+    margin: 5px 0;
+}
+
+.icon-bar + .icon-bar
+{
+    margin-top: 4px;
+}
+
+.icon-bar.A
+{
+    background: #FFF;
+}

@@ -1,0 +1,20 @@
+@namespace Views
+
+@inherits ComponentLite
+
+@if(this.LinkContainerParameter != null)
+{
+    @*<a href="@this.UrlParameter" @onclick="() => @this.OnActionParameter.InvokeAsync()" class="@this.CssParameter" alt="@(this.AltParameter != null ? this.AltParameter : "")" title="@(this.TitleParameter != null ? this.TitleParameter : "")">
+        @this.LinkContainerParameter
+    </a>*@
+
+    <a href="@this.UrlParameter" @onclick="@this.OnActionParameter" class="@this.CssParameter" alt="@(this.AltParameter != null ? this.AltParameter : "")" title="@(this.TitleParameter != null ? this.TitleParameter : "")">
+        @this.LinkContainerParameter
+    </a>
+}
+else
+{
+<a href="@this.UrlParameter" @onclick="@this.OnActionParameter" class="@this.CssParameter" alt="@(this.AltParameter != null ? this.AltParameter : "")" title="@(this.TitleParameter != null ? this.TitleParameter : "")">
+    @this.LinkTextParameter
+</a>
+}

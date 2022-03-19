@@ -1,0 +1,11 @@
+//=================================================================
+# Solution: MAK.LibBlazorUI
+### Software Engineer: Maurice Antonio Kelly @MAKMaurice
+### A Blazor Razor Class Library
+//=================================================================
+Date: 2022-03-19
+Stop Time: 14:00
+//=================================================================
+Git Commit Message: Update project structure.
+NuGet Version: 0.0.1.2
+//=================================================================

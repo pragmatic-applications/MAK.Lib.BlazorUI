@@ -1,0 +1,21 @@
+﻿
+.SearchFixed
+{
+    position: fixed;
+    display: block;
+    z-index: 100;
+    max-width: 200px;
+    margin: 0 auto;
+    right: 0;
+    top: 10px;
+}
+
+.SearchFixed .form-control
+{
+    padding: 10px;
+    border-radius: 20px 0 0 20px;
+    min-width: 200px;
+    background: #222222;
+    border: none;
+    color: #FFF;
+}

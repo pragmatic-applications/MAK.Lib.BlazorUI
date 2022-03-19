@@ -1,0 +1,56 @@
+﻿@namespace Views
+
+<ButtonBarMenu OnToggle="@MenuState.ToggleNavMenu" />
+<ButtonMainHome OnCloseMenu="@MenuState.CloseMenu" ButtonCss="@this.buttonHomeMainCss" />
+
+<header class="HideOrShow top_nav_theme MAK">
+    <nav class="@this.TopMenuCss" role="navigation">
+        <a href="" Match="NavLinkMatch.All" @onclick="@MenuState.CloseMenu" class="@this.TopNavLinkCss">
+            Home
+        </a>
+    </nav>
+</header>
+
+<div class="sidebar_container sidebar @MenuState.SidebarCss" role="navigation" @onclick="(e) => MenuState.ToggleNavMenu()">
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="" Match="NavLinkMatch.All" class="@this.SidebarNavLinkCss">
+            Home
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/Product/Index" class="@this.SidebarNavLinkCss">
+            <span aria-hidden="true"></span> All Products
+        </a>
+    </div>
+
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/Product/Fruit" class="@this.SidebarNavLinkCss">
+            Fruit
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/Product/Shirt" class="@this.SidebarNavLinkCss">
+            Shirt
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/pages/start" class="@this.SidebarNavLinkCss">
+            Start
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/pages/about-us" class="@this.SidebarNavLinkCss">
+            About
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/pages/services" class="@this.SidebarNavLinkCss">
+            Services
+        </a>
+    </div>
+    <div class="@this.SidebarNavLinkContainerCss">
+        <a href="/pages/contact" class="@this.SidebarNavLinkCss">
+            Contact
+        </a>
+    </div>
+</div>

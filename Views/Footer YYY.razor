@@ -1,0 +1,49 @@
+﻿@*@namespace Views
+
+@inherits Component
+
+<footer class="text_center">
+
+    <div class="CallToActionContainer">
+
+        <div class="TintA pad_top_bottom_30">
+
+            <p class="text_white pad_bottom_15">
+                @this.RootDataCascadingParameter.AppNameCascadingParameter
+            </p>
+
+            <div class="@this.RootDataCascadingParameter.RepeaterGridCssCascadingParameter">
+                @foreach(var item in this.BottomMenuCascadingParameter)
+                {
+                    if(string.IsNullOrWhiteSpace(item.RelativeUrl))
+                    {
+                        <a href="" Match="NavLinkMatch.All" class="BtnB">
+                            @item.MenuTitle
+                        </a>
+                    }
+                    else
+                    {
+                        <a href="@item.RelativeUrl" class="BtnB">
+                            @item.MenuTitle
+                        </a>
+                    }
+                }
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="footer_lower_container">
+        <div class="footer_lower_items">
+            <a href="/">
+                Home
+            </a>
+            <p>
+                &copy; @DateTime.Now.Year @this.RootDataCascadingParameter.AppNameCascadingParameter
+            </p>
+        </div>
+    </div>
+
+</footer>
+*@

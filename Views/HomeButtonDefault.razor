@@ -1,0 +1,18 @@
+﻿@namespace Views
+
+@if(this.UrlParameter != null)
+{
+    <div class="ButtonDefaultContainer">
+        <p>
+            <NavLink href="@this.UrlParameter" class="PrimaryButton">Home</NavLink>
+        </p>
+    </div>
+}
+else
+{
+    <div class="ButtonDefaultContainer">
+        <p class="text-center">
+            <NavLink href="/" class="PrimaryButton">Home</NavLink>
+        </p>
+    </div>
+}
