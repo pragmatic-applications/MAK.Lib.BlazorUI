@@ -13,7 +13,7 @@
 
         public const string FormFeedbackImageCss = "max_width_100_px display_block";
 
-        public const string EditFormBtnThemeBlueDCss = "btn edit_form_btn_theme_blue_d width_100_pc margin_bottom_5 pad_top_bottom_4";
+        public const string EditFormBtnThemeBlueDCss = "btn edit_form_btn_theme_blue_d width_100_pc margin_bottom_5 pad_top_bottom_1";
         public const string BtnThemeBlueCss = "btn edit_form_btn_theme_blue_d btn_width_100 margin_bottom_5 pad_top_bottom_4";
 
         public const string EditFormBtnThemeBlueD50PcCss = "btn edit_form_btn_theme_blue_d width_50_pc";

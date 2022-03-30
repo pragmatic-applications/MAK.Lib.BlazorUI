@@ -1,0 +1,8 @@
+﻿@namespace Views
+
+<p class="@this.ParagraphCss">
+    @this.Paragraph
+    <a href="@this.Url" @onclick="(e) => this.DoClickAction(e, this.Link)">
+        @this.Link
+    </a>.
+</p>

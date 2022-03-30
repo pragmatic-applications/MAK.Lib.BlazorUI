@@ -1,38 +1,31 @@
 ﻿namespace Views;
 
-public partial class ButtonMainHome
+public partial class ParagraphA
 {
     [Parameter]
-    public EventCallback OnCloseMenu
-    {
-        get; set;
-    }
-
-    //[Parameter]
-    //public string ButtonCss
-    //{
-    //    get; set;
-    //}
-
-    //[Parameter]
-    //public string CloseMenuSpanLogoCss
-    //{
-    //    get; set;
-    //}
-
-    [Parameter]
-    public ButtonCss ButtonCss
+    public string Link
     {
         get; set;
     }
 
     [Parameter]
-    public string BusinessName
+    public string Url
     {
         get; set;
     }
 
-    // nnnn
+    [Parameter]
+    public string Paragraph
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string ParagraphCss
+    {
+        get; set;
+    }
+
     [Parameter]
     public EventCallback<string> OnClickAction
     {
@@ -40,7 +33,4 @@ public partial class ButtonMainHome
     }
 
     protected virtual async Task DoClickAction(MouseEventArgs e, string linkText) => await this.OnClickAction.InvokeAsync(linkText);
-    // nnnn
 }
-
-//CloseMenuSpanLogoCss ButtonSpanCss

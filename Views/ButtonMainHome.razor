@@ -1,5 +1,7 @@
 ﻿@namespace Views
 
-<a href="/" Match="NavLinkMatch.All" @onclick="this.OnCloseMenu" class="@this.ButtonCss">
-    <span class="CloseMenu" aria-hidden="true">Home</span>
+<a href="/" Match="NavLinkMatch.All" @onclick="(e) => this.DoClickAction(e, this.BusinessName)" class="@this.ButtonCss.LinkCss">
+    <div class="span_logo_container">
+        <span class="@this.ButtonCss.ButtonSpanCss" aria-hidden="true">@this.BusinessName</span>
+    </div>
 </a>

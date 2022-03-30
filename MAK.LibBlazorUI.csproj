@@ -3,10 +3,9 @@
     <PropertyGroup>
         <TargetFramework>net6.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
-		<Nullable>enable</Nullable>
-		
+
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.1.2</Version>
+        <Version>0.0.1.6</Version>
         <RepositoryUrl>https://github.com/pragmatic-applications/MAK.Lib.BlazorUI</RepositoryUrl>
         <Authors>Maurice Antonio Kelly @MAKMaurice</Authors>
         <Company>Pragmatic Applications</Company>
@@ -23,7 +22,7 @@
     </ItemGroup>
 
     <ItemGroup>
-        <PackageReference Include="MAK.Lib.CoreLite" Version="0.0.0.4" />
+        <PackageReference Include="MAK.LibCoreLite" Version="0.0.0.6" />
         <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
         <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
         <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.3" />

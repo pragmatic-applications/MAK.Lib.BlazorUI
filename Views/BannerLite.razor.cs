@@ -1,18 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-
 namespace Views;
 
 public partial class BannerLite
 {
     [Parameter]
-    public string BannerImageCssParameter { get; set; }
+    public string BannerImageCssParameter
+    {
+        get; set;
+    }
 
     [Parameter]
-    public string BannerTitleCssParameter { get; set; }
+    public string BannerTitleCssParameter
+    {
+        get; set;
+    }
 
     [Parameter]
-    public string BannerTitleParameter { get; set; }
+    public string BannerTitleParameter
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string BusinessNameParameter
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string BusinessNameFullParameter
+    {
+        get; set;
+    }
 }
+
+// ToDo: give choice for heading size 1...6

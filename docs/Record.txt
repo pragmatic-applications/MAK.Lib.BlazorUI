@@ -1,11 +1,12 @@
 //=================================================================
-# Solution: MAK.LibBlazorUI
+# Project: MAK.LibBlazorUI
 ### Software Engineer: Maurice Antonio Kelly @MAKMaurice
 ### A Blazor Razor Class Library
 //=================================================================
-Date: 2022-03-19
-Stop Time: 14:00
+Date: 2022-03-30
+Stop Time: 11:30
 //=================================================================
-Git Commit Message: Update project structure.
-NuGet Version: 0.0.1.2
+Git Commit Message: Move to local Windows folder because of macOS .DS_Store file issues with NuGet packages when deploying Blazor Web App that uses this library.
+
+NuGet: https://www.nuget.org/packages/MAK.LibBlazorUI/0.0.1.6
 //=================================================================

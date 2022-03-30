@@ -1,13 +1,29 @@
-﻿namespace Domain
+﻿namespace Domain;
+
+public class BaseViewData
 {
-    public class BaseViewData
+    public string ProductName
     {
-        public string ProductName { get; set; }
-        public string ProductDescription { get; set; }
-        public decimal ProductPrice { get; set; }
-        public int ProductQuantity { get; set; }
-        public decimal ShippingCost { get; set; }
-        public int TotalCost { get; set; }
+        get; set;
+    }
+    public string ProductDescription
+    {
+        get; set;
+    }
+    public decimal ProductPrice
+    {
+        get; set;
+    }
+    public int ProductQuantity
+    {
+        get; set;
+    }
+    public decimal ShippingCost
+    {
+        get; set;
+    }
+    public int TotalCost
+    {
+        get; set;
     }
 }
-
