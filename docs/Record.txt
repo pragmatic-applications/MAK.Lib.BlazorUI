@@ -3,10 +3,10 @@
 ### Software Engineer: Maurice Antonio Kelly @MAKMaurice
 ### A Blazor Razor Class Library
 //=================================================================
-Date: 2022-03-30
-Stop Time: 11:30
+Date: 2022-04-04
+Stop Time: 17:30
 //=================================================================
-Git Commit Message: Move to local Windows folder because of macOS .DS_Store file issues with NuGet packages when deploying Blazor Web App that uses this library.
+Git Commit Message: Add JS Module Interop to the Navigation that works if I disable the C# toggle, this should work even on a system that doesn't support Wasm; the JS Nav should work as usal to provide a usable navigation system.
 
 NuGet: https://www.nuget.org/packages/MAK.LibBlazorUI/0.0.1.6
 //=================================================================

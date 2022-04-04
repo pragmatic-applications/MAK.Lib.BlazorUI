@@ -1,32 +1,40 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
-    <PropertyGroup>
-        <TargetFramework>net6.0</TargetFramework>
-        <ImplicitUsings>enable</ImplicitUsings>
+	<PropertyGroup>
+		<TargetFramework>net6.0</TargetFramework>
+		<ImplicitUsings>enable</ImplicitUsings>
 
-        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-        <Version>0.0.1.6</Version>
-        <RepositoryUrl>https://github.com/pragmatic-applications/MAK.Lib.BlazorUI</RepositoryUrl>
-        <Authors>Maurice Antonio Kelly @MAKMaurice</Authors>
-        <Company>Pragmatic Applications</Company>
-        <PackageLicenseExpression>MIT</PackageLicenseExpression>
-        <Description>A Blazor Razor Class Library</Description>
-        <PackageReleaseNotes>A Blazor Razor Class Library</PackageReleaseNotes>
-        <PackageTags>A Blazor Razor Class Library</PackageTags>
-        <RepositoryType>A Blazor Razor Class Library</RepositoryType>
-        <Copyright>Pragmatic Applications - Maurice Antonio Kelly @MAKMaurice</Copyright>
-    </PropertyGroup>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.0.1.7</Version>
+		<RepositoryUrl>https://github.com/pragmatic-applications/MAK.Lib.BlazorUI</RepositoryUrl>
+		<Authors>Maurice Antonio Kelly @MAKMaurice</Authors>
+		<Company>Pragmatic Applications</Company>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Description>A Blazor Razor Class Library</Description>
+		<PackageReleaseNotes>A Blazor Razor Class Library</PackageReleaseNotes>
+		<PackageTags>A Blazor Razor Class Library</PackageTags>
+		<RepositoryType>A Blazor Razor Class Library</RepositoryType>
+		<Copyright>Pragmatic Applications - Maurice Antonio Kelly @MAKMaurice</Copyright>
+	</PropertyGroup>
 
-    <ItemGroup>
-        <SupportedPlatform Include="browser" />
-    </ItemGroup>
+	<ItemGroup>
+		<Content Remove="**\.DS_Store" />
+	</ItemGroup>
 
-    <ItemGroup>
-        <PackageReference Include="MAK.LibCoreLite" Version="0.0.0.6" />
-        <PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
-        <PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
-        <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.3" />
-        <PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
-    </ItemGroup>
+	<ItemGroup>
+		<None Remove="**\.DS_Store" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<SupportedPlatform Include="browser" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="MAK.LibCoreLite" Version="0.0.0.6" />
+		<PackageReference Include="Microsoft.AspNetCore.Http.Features" Version="6.0.0-preview.4.21253.5" />
+		<PackageReference Include="System.Net.Http.Json" Version="6.0.0" />
+		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="6.0.3" />
+		<PackageReference Include="Microsoft.AspNetCore.WebUtilities" Version="2.2.0" />
+	</ItemGroup>
 
 </Project>
