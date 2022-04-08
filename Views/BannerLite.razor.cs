@@ -15,6 +15,31 @@ public partial class BannerLite
     }
 
     [Parameter]
+    public string BusinessNameContainerCss
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string BusinessNameCss
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string BannerLowerContainerCss
+    {
+        get; set;
+    }
+
+    [Parameter]
+    public string BannerLowerItemCss
+    {
+        get; set;
+    }
+
+
+    [Parameter]
     public string BannerTitleParameter
     {
         get; set;
@@ -32,5 +57,3 @@ public partial class BannerLite
         get; set;
     }
 }
-
-// ToDo: give choice for heading size 1...6

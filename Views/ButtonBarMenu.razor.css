@@ -37,7 +37,7 @@
     text-decoration: none;
 }
 
-.icon-bar
+.icon_bar
 {
     display: block;
     width: 22px;
@@ -45,12 +45,7 @@
     margin: 5px 0;
 }
 
-.icon-bar + .icon-bar
+.icon_bar + .icon_bar
 {
     margin-top: 4px;
-}
-
-.icon-bar.A
-{
-    background: #FFF;
 }

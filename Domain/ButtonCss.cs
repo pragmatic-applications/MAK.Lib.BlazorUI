@@ -7,6 +7,11 @@ public class ButtonCss
         get; set;
     }
 
+    public string BtnSpanLogoContainerCss
+    {
+        get; set;
+    }
+
     public string ButtonSpanCss
     {
         get; set;

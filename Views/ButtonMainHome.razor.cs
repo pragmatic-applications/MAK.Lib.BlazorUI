@@ -8,23 +8,12 @@ public partial class ButtonMainHome
         get; set;
     }
 
-    //[Parameter]
-    //public string ButtonCss
-    //{
-    //    get; set;
-    //}
-
-    //[Parameter]
-    //public string CloseMenuSpanLogoCss
-    //{
-    //    get; set;
-    //}
-
     [Parameter]
     public ButtonCss ButtonCss
     {
         get; set;
     }
+
 
     [Parameter]
     public string BusinessName
@@ -32,7 +21,6 @@ public partial class ButtonMainHome
         get; set;
     }
 
-    // nnnn
     [Parameter]
     public EventCallback<string> OnClickAction
     {
@@ -40,7 +28,4 @@ public partial class ButtonMainHome
     }
 
     protected virtual async Task DoClickAction(MouseEventArgs e, string linkText) => await this.OnClickAction.InvokeAsync(linkText);
-    // nnnn
 }
-
-//CloseMenuSpanLogoCss ButtonSpanCss

@@ -3,10 +3,10 @@
 ### Software Engineer: Maurice Antonio Kelly @MAKMaurice
 ### A Blazor Razor Class Library
 //=================================================================
-Date: 2022-04-04
-Stop Time: 17:30
+Date: 2022-04-08
+Stop Time: 16:00
 //=================================================================
-Git Commit Message: Add JS Module Interop to the Navigation that works if I disable the C# toggle, this should work even on a system that doesn't support Wasm; the JS Nav should work as usal to provide a usable navigation system.
+Git Commit Message: Using Parameters to set CSS values for BannerLite, ButtonBarMenu and ButtonMainHome.
 
-NuGet: https://www.nuget.org/packages/MAK.LibBlazorUI/0.0.1.6
+NuGet: https://www.nuget.org/packages/MAK.LibBlazorUI/
 //=================================================================
